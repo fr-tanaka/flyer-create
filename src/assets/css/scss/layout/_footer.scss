@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
+
+.l-footer {
+  overflow: hidden;
+  background: #fff;
+
+  &__service-lp {
+    text-align: center;
+
+    @include mq('sm'){
+      margin-top: calc(56vw / $vwSm);
+    }
+    @include mq('lg'){
+      margin-top: calc(106vw / $vwLg);
+    }
+    @include mq('xlg'){
+      margin-top: 106px;
+    }
+
+    &__txt01 {
+      font-weight: 900;
+      letter-spacing: 1.17;
+
+      @include mq('sm'){
+        margin-bottom: calc(15vw / $vwSm);
+        font-size: 4.5vw;
+      }
+      @include mq('lg'){
+        margin-bottom: calc(40vw / $vwLg);
+        font-size: calc(36vw / $vwLg);
+      }
+      @include mq('xlg'){
+        margin-bottom: 40px;
+        font-size: 36px;
+      }
+    }
+
+    &__txt02 {
+
+      @include mq('sm'){
+        margin-bottom: calc(22.5vw / $vwSm);
+        font-size: 3.5vw;
+        line-height: 5.5vw;
+      }
+      @include mq('lg'){
+        margin-bottom: calc(60vw / $vwLg);
+      }
+      @include mq('xlg'){
+        margin-bottom: 60px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      @include mq('lg'){
+        margin-bottom: calc(140vw / $vwLg);
+      }
+      @include mq('xlg'){
+        margin-bottom: 140px;
+      }
+
+      &__item {
+
+        @include mq('sm'){
+          margin-bottom: calc(12vw / $vwSm);
+        }
+        @include mq('lg'){
+          width: 48%;
+          margin-bottom: calc(24vw / $vwLg);
+        }
+        @include mq('xlg'){
+          margin-bottom: 24px;
+        }
+
+        img {
+          border: solid 1px #000;
+        }
+      }
+    }
+
+    &__company {
+      color: #00000061;
+      text-align: center;
+      text-decoration: underline;
+
+      @include mq('sm'){
+        padding: calc(48vw / $vwSm) 0;
+        font-size: 3.5vw;
+      }
+      @include mq('lg'){
+        padding: calc(48vw / $vwLg) 0;
+      }
+      @include mq('xlg'){
+        padding: 48px 0;
+      }
+
+      a {
+        color: #00000061;
+      }
+    }
+  }
+
+  &__copy {
+    text-align: center;
+
+    @include mq('sm'){
+      margin: calc(56vw / $vwSm) 0;
+    }
+    @include mq('lg'){
+      margin: calc(106vw / $vwLg) 0;
+    }
+    @include mq('xlg'){
+      margin: 106px 0;
+    }
+  }
+}

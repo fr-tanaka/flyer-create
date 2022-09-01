@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.c-link-btn {
+
+  &01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background: #fff;
+    border: 1px solid #000;
+
+    @include mq('sm'){
+      height: calc(121vw / $vwSm);
+      font-size: calc(30vw / $vwSm);
+      border-radius: calc(60vw / $vwSm);
+    }
+    @include mq('lg'){
+      height: calc(120vw / $vwLg);
+      border-radius: calc(60vw / $vwLg);
+    }
+    @include mq( 'xlg'){
+      height: 120px;
+      border-radius: 60px;
+    }
+  }
+}

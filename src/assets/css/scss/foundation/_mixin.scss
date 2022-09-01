@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+@use "./variable" as *;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

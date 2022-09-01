@@ -1,0 +1,309 @@
+@charset 'UTF-8';
+
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
+
+@keyframes menu-open {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-close {
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes nav-open {
+
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes nav-close {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background: $colorYellow01;
+
+  .l-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq('sm'){
+      height: calc(105vw / $vwSm);
+    }
+    @include mq('lg'){
+      width: calc(1800vw / $vwLg);
+      height: calc(110vw / $vwLg);
+    }
+    @include mq('xlg'){
+      width: 1800px;
+      height: 110px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 2;
+
+    @include mq('sm'){
+      width: calc(394vw / $vwSm);
+    }
+    @include mq('lg'){
+      width: calc(394vw / $vwLg);
+    }
+    @include mq('xlg'){
+      width: 394px;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  &__contents {
+
+    @include mq('lg'){
+      height: 100%;
+    }
+  }
+
+  &__nav {
+
+    @include mq('sm'){
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100vh;
+      padding: calc(138vw / $vwSm) 0 calc(80vw / $vwSm);
+      overflow-y: auto;
+      pointer-events: none;
+      background: #fff;
+      opacity: 0;
+    }
+    @include mq('lg'){
+      height: 100%;
+    }
+
+    .is-menu & {
+      pointer-events: auto;
+      animation: .4s cubic-bezier(0, 0, .2, 1) .1s both menu-open;
+    }
+
+    .is-menu-close & {
+      animation: $transition both menu-close;
+    }
+
+    &__title {
+      font-size: calc(22vw / $vwSm);
+      text-align: center;
+    }
+
+    &__menu {
+      position: absolute;
+      top: calc(34vw / $vwSm);
+      right: calc(54vw / $vwSm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(140vw / $vwSm);
+
+      &__text {
+        font-size: calc(22vw / $vwSm);
+      }
+
+      &__icon {
+        position: relative;
+        display: block;
+        width: calc(54vw / $vwSm);
+        height: calc(54vw / $vwSm);
+
+        &:before,
+        &:after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: calc(4vw / $vwSm);
+          margin: auto;
+          content: "";
+          background: #000;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    &__ul {
+
+      @include mq('sm'){
+        display: block;
+        margin: calc(44vw / $vwSm) 0 0;
+      }
+      @include mq('lg'){
+        display: flex;
+        height: 100%;
+      }
+    }
+
+    &__item {
+      @include mq('sm'){
+        overflow: hidden;
+        font-size: calc(38vw / $vwSm);
+        font-weight: 700;
+        text-align: center;
+      }
+      @include mq('lg'){
+        font-size: calc(26vw / $vwLg);
+      }
+      @include mq('xlg'){
+        font-size: 26px;
+      }
+
+      &:not(:first-of-type) {
+        @include mq('sm'){
+          position: relative;
+        }
+        @include mq('lg'){
+          margin-left: calc(62vw / $vwLg);
+        }
+        @include mq('xlg'){
+          margin-left: 62px;
+        }
+
+        &:before {
+          @include mq('sm'){
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: block;
+            width: calc(353vw / $vwSm);
+            height: 1px;
+            margin: auto;
+            content: "";
+            border-top: calc(3vw / $vwSm) dotted #000;
+          }
+        }
+      }
+
+      &__link {
+        transition: color $transition;
+        
+        @include mq('sm'){
+          display: block;
+          padding: calc(50vw / $vwSm) 0;
+          text-align: center;
+          transform: translateY(-100%);
+        }
+        @include mq('lg'){
+          display: flex;
+          align-items: center;
+          height: 100%;
+        }
+  
+        &:hover {
+          @include mq('lg'){
+            color: $colorBlue02;
+          }
+        }
+  
+        .is-menu & {
+          @include mq('sm'){
+            animation: .5s ease both nav-open;
+          }
+        }
+  
+        $delay: .05;
+  
+        @for $i from 1 through 5 {
+          .is-menu .l-header__nav__item:nth-of-type(#{$i}) & {
+            @include mq('sm'){
+              animation-delay: .4s + $delay;
+              
+              $delay: $delay + .05;
+            }
+          }
+        }
+  
+      }
+    }
+  }
+
+  &__menu {
+    position: relative;
+    display: block;
+    width: calc(74vw / $vwSm);
+    height: calc(38vw / $vwSm);
+
+    &:before,
+    &:after,
+    span {
+      position: absolute;
+      right: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: calc(4vw / $vwSm);
+      margin: auto;
+      background: #000;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+
+    span {
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

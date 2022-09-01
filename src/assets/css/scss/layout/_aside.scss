@@ -1,0 +1,49 @@
+@charset 'UTF-8';
+
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
+
+.l-aside {
+  position: fixed;
+  z-index: 8888;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity $transition;
+
+  .is-aside__active & {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  @include mq('sm'){
+    right: 0;
+    bottom: calc(70vw / $vwSm);
+    width: calc(83vw / $vwSm);
+  }
+  @include mq('lg'){
+    right: calc(100vw / $vwLg);
+    bottom: calc(70vw / $vwLg);
+    width: calc(186vw / $vwLg);
+  }
+  @include mq('xlg'){
+    right: 100px;
+    bottom: 70px;
+    width: 186px;
+  }
+
+  &__contact {
+    display: block;
+    background: #bbb;
+    border-radius: 50%;
+
+    img {
+      transition: opacity $transition;
+
+      &:hover {
+        @include mq('lg'){
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// vw
+$vwSm: calc(750 / 100);
+$vwLg: calc(2000 / 100);
+
+// fontcolor
+$fontColorMain: #575757;
+
+// color
+$colorYellow01: #fd0;
+$colorGray01: #f5f5f5;
+$colorGray02: #707070;
+$colorBlue01: #eff7ff;
+$colorBlue02: #62a3c1;
+
+
+// font-size
+$fontSizeSm: calc(24vw / $vwSm);
+$fontSizeLg: calc(23vw / $vwLg);
+$fontSizeXlg: 23px;
+
+// breakpoint
+$breakpoints: (
+  "sm": "screen and (max-width: 767px)",
+  "lg": "screen and (min-width: 768px)",
+  "xlg": "screen and (min-width: 2000px)",
+) !default;
+
+// transition
+$transition: .3s cubic-bezier(.5,0,0,1);

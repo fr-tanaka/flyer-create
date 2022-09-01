@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+@use "./variable" as *;
+@use "./mixin" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic,Avenir, "Hiragino Sans", "ヒラギノ角ゴシック", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: $fontColorMain;
+  background: $colorYellow01;
+
+  @include mq('sm'){
+    font-size: $fontSizeSm;
+  }
+  @include mq('lg'){
+    font-size: $fontSizeLg;
+  }
+  @include mq('xlg'){
+    font-size: $fontSizeXlg;
+  }
+}
+
+img {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: $fontColorMain;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.wrapper {
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .5s ease;
+
+  &.is-load {
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+.sp {
+  @include mq('lg'){
+    display: none!important;
+  }
+}
+
+.pc {
+  @include mq('sm'){
+    display: none!important;
+  }
+}

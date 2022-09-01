@@ -1,0 +1,18 @@
+@charset 'UTF-8';
+
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
+
+.l-container {
+  margin: 0 auto;
+
+  @include mq('sm'){
+    width: 90.133vw;
+  }
+  @include mq('lg'){
+    width: 50vw;
+  }
+  @include mq('xlg'){
+    width: 1000px;
+  }
+}

@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.c-price-list {
+
+  &__group {
+
+    &:not(:first-of-type) {
+
+      @include mq('sm'){
+        margin-top: calc(50vw / $vwSm);
+      }
+      @include mq('lg'){
+        margin-top: calc(39vw / $vwLg);
+      }
+      @include mq( 'xlg'){
+        margin-top: 39px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq('sm'){
+      font-size: calc(42vw / $vwSm);
+    }
+    @include mq('lg'){
+      font-size: calc(39vw / $vwLg);
+    }
+    @include mq( 'xlg'){
+      font-size: 39px;
+    }
+
+    &:not(:first-of-type) {
+
+      @include mq('sm'){
+        margin-top: calc(15vw / $vwSm);
+      }
+      @include mq('lg'){
+        margin-top: calc(26vw / $vwLg);
+      }
+      @include mq( 'xlg'){
+        margin-top: 26px;
+      }
+    }
+  }
+}

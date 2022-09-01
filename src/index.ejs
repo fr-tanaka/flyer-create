@@ -1,0 +1,597 @@
+<%
+	const meta = {
+		title: '販促チラシ制作サービス｜株式会社フロンティア',
+		description: '来店に繋がるおトクな情報を告知！ポスティングや折込みで店舗周りのエリアに配布して来店数を増やしましょう。DMやクーポンなども合わせて制作できます！まずはお気軽にお問い合わせください。',
+		url: 'https://www.frontier-ad.co.jp/lp/flyer-create/'
+	}
+%>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title><%= meta.title %></title>
+	<meta name="description" content="<%= meta.description %>">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!--OGP-->
+	<meta property="og:title" content="<%= meta.title %>">
+	<meta property="og:description" content="<%= meta.description %>">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="<%= meta.title %>">
+	<meta property="og:url" content="<%= meta.url %>">
+	<meta property="og:image" content="<%= meta.url %>assets/images/ogp.jpg">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:image:alt" content="">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="theme-color" content="#fff">
+
+	<!-- ファビコン -->
+	<%# <link rel="apple-touch-icon" href="" size=""> %>
+	<link rel="icon" href="./assets/images/favicon.ico">
+
+</head>
+<body>
+<div id="pagetop" class="wrapper p-top">
+	<header class="l-header">
+		<div class="l-container">
+			<h1 class="l-header__logo"><a data-scroll="pagetop"><img src="./assets/images/img__logo.png" srcset="./assets/images/img__logo@2x.png 2x" alt="販促チラシ制作サービス"></a></h1>
+
+			<div class="l-header__contents">
+				<div class="l-header__menu sp" data-menu><span></span></div>
+				<nav class="l-header__nav">
+					<div class="l-header__nav__menu sp" data-menu-close>
+						<p class="l-header__nav__menu__text">閉じる</p>
+						<div class="l-header__nav__menu__icon"></div>
+					</div>
+
+					<p class="l-header__nav__title sp">MENU</p>
+					<ul class="l-header__nav__ul">
+						<li class="l-header__nav__item"><a class="l-header__nav__item__link" data-scroll="problem">販促チラシとは</a></li>
+						<li class="l-header__nav__item"><a class="l-header__nav__item__link" data-scroll="works">制作事例</a></li>
+						<li class="l-header__nav__item"><a class="l-header__nav__item__link" data-scroll="scene">運用事例</a></li>
+						<li class="l-header__nav__item"><a class="l-header__nav__item__link" data-scroll="faq">よくあるご質問</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--l-header__contents-->
+		</div>
+		<!--l-container-->
+	</header>
+	
+	<section class="p-mv l-section">
+		<div class="l-container">
+			<div class="p-mv__textarea">
+				<h2 class="p-mv__title">
+					<picture>
+						<source srcset="./assets/images/img__mv__text01__sp@2x.png" media="(max-width: 767px)">
+						<img src="./assets/images/img__mv__text01.png" srcset="./assets/images/img__mv__text01@2x.png" alt="販促チラシ 制作サービス by FRONTIER 来店に繋がるおトク情報をPR！クーポン、DMなどもお任せください！">
+					</picture>
+				</h2>
+				<div class="p-mv__list">
+					<picture>
+						<source srcset="./assets/images/img__mv__text02__sp@2x.png" media="(max-width: 767px)">
+						<img src="./assets/images/img__mv__text02.png" srcset="./assets/images/img__mv__text02@2x.png" alt="認知度アップ 来店に繋がる！ イベントの告知に！">
+					</picture>
+				</div>
+			</div>
+			<!--p-mv__textarea-->
+		</div>
+		<!--l-container-->
+	</section>
+	<!--p-mv-->
+
+	<main class="l-main">
+		<section class="p-slider l-section">
+			<picture>
+				<source srcset="./assets/images/img__slider__sp.png" media="(max-width: 767px)">
+				<img src="./assets/images/img__slider.png" alt="" class="p-slider__img m-img__01">
+			</picture>
+			<picture>
+				<source srcset="./assets/images/img__slider__sp.png" media="(max-width: 767px)">
+				<img src="./assets/images/img__slider.png" alt="" class="p-slider__img m-img__02">
+			</picture>
+		</section>
+		<!--p-slider-->
+
+		<section id="problem" class="p-problem l-section">
+			<div class="p-problem__01">
+				<div class="l-container">
+					<h3 class="p-problem__01__title"><img src="./assets/images/img__problem__title.svg" alt="こんなお悩みありませんか？"></h3>
+					<div class="p-problem__01__contents"><img src="./assets/images/img__problem__contents.png" srcset="./assets/images/img__problem__contents@2x.png 2x" alt="来客数が増えない。イベントやキャンペーンの告知はどうしたら。再来店に繋げるにはどうしたら。"></div>
+				</div>
+				<!--l-container-->
+			</div>
+			<!--p-problem__01-->
+
+			<div class="p-problem__02">
+				<div class="l-container">
+					<h3 class="p-problem__02__title">
+						<picture>
+							<source srcset="./assets/images/img__resolve__title__sp@2x.png" media="(max-width: 767px)">
+							<img src="./assets/images/img__resolve__title.png" srcset="./assets/images/img__resolve__title@2x.png 2x" alt="私たちが今までのお悩みを解決！">
+						</picture>
+					</h3>
+					<div class="p-problem__02__contents">
+						<p class="p-problem__02__text">
+							ポスティングで店舗周りの地域に告知！<br>
+							来店でクーポンを配布して<br>
+							再来店に繋げましょう！
+						</p>
+					</div>
+					<!--p-problem__02__contents-->
+				</div>
+				<!--l-container-->
+			</div>
+			<!--p-problem__02-->
+		</section>
+		<!--p-problem-->
+
+		<section class="l-section p-point">
+			<div class="l-container">
+				<h3 class="p-point__title"><img src="./assets/images/img__point__title.svg" alt="フロンティアのココがポイント！"></h3>
+
+				<p class="p-point__lead">
+					わたしたちフロンティアは、お客様の成功のために販促物の<br>
+					デザインを請け負ってまいりました。<br>
+					地域に愛される店舗経営に寄り添うご提案が可能です。
+				</p>
+
+				<div class="p-point__contents">
+					<div class="p-point__item p-point__item--01">
+						<figure class="p-point__item__figure">
+							<img src="./assets/images/icon__point_01.svg" alt="">
+						</figure>
+						<div class="p-point__item__text">
+							<p>
+								経験豊富なデザイナー<br>
+								が多数在籍
+							</p>
+						</div>
+					</div>
+					<!--p-point__item-->
+
+					<div class="p-point__item p-point__item--02">
+						<figure class="p-point__item__figure">
+							<img src="./assets/images/icon__point_02.svg" alt="">
+						</figure>
+						<div class="p-point__item__text">
+							<p>
+								スピーディーな<br>
+								対応が自慢です！
+							</p>
+						</div>
+					</div>
+					<!--p-point__item-->
+
+					<div class="p-point__item p-point__item--03">
+						<figure class="p-point__item__figure">
+							<img src="./assets/images/icon__point_03.svg" alt="">
+						</figure>
+						<div class="p-point__item__text">
+							<p>
+								クーポンやアメニティ<br>
+								など合わせて相談OK
+							</p>
+						</div>
+					</div>
+					<!--p-point__item-->
+
+					<div class="p-point__item p-point__item--04">
+						<figure class="p-point__item__figure">
+							<img src="./assets/images/icon__point_04.svg" alt="">
+						</figure>
+						<div class="p-point__item__text">
+							<p>
+								Webサイト制作<br>
+								なども承ります！
+							</p>
+						</div>
+					</div>
+					<!--p-point__item-->
+				</div>
+				<!--p-point__contents-->
+			</div>
+			<!--l-container-->
+		</section>
+		<!--p-point-->
+
+		<section id="works" class="p-works">
+			<div class="l-container">
+				<h3 class="p-works__title"><img src="./assets/images/img__works__title.svg" alt="制作事例"></h3>
+				<div class="p-works__contents">
+					<div class="p-works__item" data-modal="works01">
+						<img src="./assets/images/img__works__01.jpg" srcset="./assets/images/img__works__01@2x.jpg 2x" alt="">
+					</div>
+					<div class="p-works__item" data-modal="works02">
+						<img src="./assets/images/img__works__02.jpg" srcset="./assets/images/img__works__02@2x.jpg 2x" alt="">
+					</div>
+					<div class="p-works__item" data-modal="works03">
+						<img src="./assets/images/img__works__03.jpg" srcset="./assets/images/img__works__03@2x.jpg 2x" alt="">
+					</div>
+					<!--p-works__item-->
+				</div>
+				<!--p-works__contents-->
+			</div>
+			<!--l-container-->
+
+			<div class="p-modal">
+				<div class="p-modal__inner">
+					<div class="p-modal__close" data-modal-close=""></div>
+
+					<div class="p-modal__item" data-modal-target="works01"><img src="./assets/images/img__works__01@2x.jpg" alt=""></div><!--p-modal__item-->
+					<div class="p-modal__item" data-modal-target="works02"><img src="./assets/images/img__works__02@2x.jpg" alt=""></div><!--p-modal__item-->
+					<div class="p-modal__item" data-modal-target="works03"><img src="./assets/images/img__works__03@2x.jpg" alt=""></div><!--p-modal__item-->
+				</div>
+				<!--p-modal__inner-->
+
+				<div class="p-modal__bg"></div>
+			</div>
+			<!--p-modal-->
+		</section>
+		<!--p-works-->
+
+		<section id="scene" class="p-scene l-section">
+			<div class="l-container">
+				<h3 class="p-scene__title"><img src="./assets/images/img__scene__title.svg" alt="こんな場合にも"></h3>
+				<div class="p-scene__contents">
+					<div class="p-scene__item">
+						<img src="./assets/images/img__scene01.png" srcset="./assets/images/img__scene01@2x.png 2x" alt="オープン記念やイベントに合わせて新聞折込で告知をしよう!">
+					</div>
+					<div class="p-scene__item">
+						<img src="./assets/images/img__scene02.png" srcset="./assets/images/img__scene02@2x.png 2x" alt="来店いただいたお客様にクーポンを配って再来店を狙おう！">
+					</div>
+					<!--p-scene__title-->
+				</div>
+			</div>
+			<!--l-container-->
+		</section>
+		<!--p-scene-->
+
+		<section id="faq" class="p-faq l-section">
+			<div class="l-container">
+				<h3 class="p-faq__title"><img src="./assets/images/img__faq__title.svg" alt="よくあるご質問"></h3>
+				<div class="p-faq__contents">
+					<dl class="p-faq__item">
+						<dt class="p-faq__dt"><span class="p-faq__dt__text">チラシは作りたいのですが、どのような<br>内容にすればいいのか迷っています。</span></dt>
+						<dd class="p-faq__dd">
+							<p class="p-faq__dd__p">内容が決まっていなくてもご相談ください。<br>ヒアリングを行い、こちらで内容を提案することも可能です。</p>
+						</dd>
+					</dl>
+					<!--p-faq__item-->
+
+					<dl class="p-faq__item">
+						<dt class="p-faq__dt"><span class="p-faq__dt__text">納品までどのくらいの期間がかかりますか？</span></dt>
+						<dd class="p-faq__dd">
+							<p class="p-faq__dd__p">デザイン作成後の修正などによって多少前後いたしますが00営業日〜が目安となります。お急ぎの場合は、できる限り対応致しますのでご相談ください。</p>
+						</dd>
+					</dl>
+					<!--p-faq__item-->
+
+					<dl class="p-faq__item">
+						<dt class="p-faq__dt"><span class="p-faq__dt__text">店舗の写真などを使ってもらうことはできますか？</span></dt>
+						<dd class="p-faq__dd">
+							<p class="p-faq__dd__p">ご提供いただければ掲載可能です。（ポスターなどには、大きなサイズの写真データが必要になることもあります）また、弊社で撮影をすることも可能です。ご相談ください。</p>
+						</dd>
+					</dl>
+					<!--p-faq__item-->
+				</div>
+				<!--p-faq__contents-->
+			</div>
+			<!--l-container-->
+		</section>
+		<!--p-faq-->
+
+		<section id="more" class="p-more l-section">
+			<div class="l-container">
+				<h3 class="p-more__title"><img src="./assets/images/img__more__title.svg" alt="チラシ作成とセットでおすすめ チラシLP・動画制作"></h3>
+				<p class="p-more__lead">作ったチラシを使って、デジタルからも告知できます！</p>
+				<div class="p-more__contents">
+					<a href="" class="c-link-btn01" target="_blank">詳細はこちら</a>
+				</div>
+				<!--p-more__contents-->
+			</div>
+			<!--l-container-->
+		</section>
+		<!--p-more-->
+
+		<section id="price" class="p-price l-section">
+			<div class="l-container">
+				<h3 class="p-price__title"><img src="./assets/images/img__price__title.svg" alt="デザイン料金表"></h3>
+				<div class="p-price__contents">
+					<div class="p-price__list">
+						<dl class="p-price__item">
+							<dt class="p-price__item__title">チラシ・フライヤー</dt>
+							<dd class="c-price-list">
+								<div class="c-price-list__group">
+									<dl class="c-price-list__item">
+										<dt class="c-price-list__title">A5/片面</dt>
+										<dd class="c-price-list__contents">00,000円〜</dd>
+									</dl>
+									<dl class="c-price-list__item">
+										<dt class="c-price-list__title">A5/両面</dt>
+										<dd class="c-price-list__contents">00,000円〜</dd>
+									</dl>
+								</div>
+								<!--c-price-list__group-->
+								<div class="c-price-list__group">
+									<dl class="c-price-list__item">
+										<dt class="c-price-list__title">A4/片面</dt>
+										<dd class="c-price-list__contents">00,000円〜</dd>
+									</dl>
+									<dl class="c-price-list__item">
+										<dt class="c-price-list__title">A4/両面</dt>
+										<dd class="c-price-list__contents">00,000円〜</dd>
+									</dl>
+								</div>
+								<!--c-price-list__group-->
+								<div class="c-price-list__group">
+									<dl class="c-price-list__item">
+										<dt class="c-price-list__title">B4/片面</dt>
+										<dd class="c-price-list__contents">00,000円〜</dd>
+									</dl>
+									<dl class="c-price-list__item">
+										<dt class="c-price-list__title">B4/両面</dt>
+										<dd class="c-price-list__contents">00,000円〜</dd>
+									</dl>
+								</div>
+								<!--c-price-list__group-->
+							</dd>
+						</dl>
+
+						<dl class="p-price__item">
+							<dt class="p-price__item__title">チラシ・フライヤー</dt>
+							<dd class="c-price-list">
+								<dl class="c-price-list__item">
+									<dt class="c-price-list__title">A4/三つ折り</dt>
+									<dd class="c-price-list__contents">00,000円〜</dd>
+								</dl>
+								<dl class="c-price-list__item">
+									<dt class="c-price-list__title">A3/二つ折り</dt>
+									<dd class="c-price-list__contents">00,000円〜</dd>
+								</dl>
+							</dd>
+						</dl>
+
+						<dl class="p-price__item">
+							<dt class="p-price__item__title">ポスター</dt>
+							<dd class="c-price-list">
+								<dl class="c-price-list__item">
+									<dt class="c-price-list__title">A1</dt>
+									<dd class="c-price-list__contents">00,000円〜</dd>
+								</dl>
+								<dl class="c-price-list__item">
+									<dt class="c-price-list__title">A2</dt>
+									<dd class="c-price-list__contents">00,000円〜</dd>
+								</dl>
+							</dd>
+						</dl>
+					</div>
+					<!--p-price__list-->
+					<div class="c-anno__wrap"><p class="c-anno">印刷費は別途となります。</p></div>
+					<p class="p-price__bottom">その他の販促物、サイズも承ります！<br>お問い合わせください。</p>
+				</div>
+				<!--p-price__contents-->
+			</div>
+			<!--l-container-->
+		</section>
+		<!--p-more-->
+
+		<section id="contact" class="p-contact l-section">
+			<div class="l-container">
+				<h3 class="p-contact__title">
+					<picture>
+						<source srcset="./assets/images/img__contact__title__sp.svg" media="(max-width: 767px)">
+						<img src="./assets/images/img__contact__title.svg" alt="チラシ制作お問い合わせはこちら">
+					</picture>
+				</h3>
+				<div class="p-contact__contents">
+					<h4 class="p-contact__contents__title">お問合わせフォーム</h4>
+					<div class="p-contact__formarea">
+						<form action="mailcontact.php" method="post" enctype="multipart/form-data" class="c-form">
+							<div class="c-form__formarea">
+								<p class="c-form__lead"><span class="u-red">※</span>は必須項目です</p>
+								<dl class="c-form__item">
+									<dt class="c-form__title">企業名</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input"><input type="text" name="企業名"></div>
+									</dd>
+								</dl>
+								<dl class="c-form__item">
+									<dt class="c-form__title c-form__title--req">お名前</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input"><input type="text" name="お名前"></div>
+									</dd>
+								</dl>
+								<dl class="c-form__item">
+									<dt class="c-form__title c-form__title--req">メールアドレス</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input"><input type="text" name="メールアドレス"></div>
+									</dd>
+								</dl>
+	
+								<dl class="c-form__item">
+									<dt class="c-form__title c-form__title--req">メールアドレス（確認）</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input"><input type="text" name="メールアドレス（確認）"></div>
+									</dd>
+								</dl>
+	
+								<dl class="c-form__item">
+									<dt class="c-form__title">電話番号</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input"><input type="text" name="電話番号"></div>
+									</dd>
+								</dl>
+
+								<dl class="c-form__item">
+									<dt class="c-form__title">お問い合わせ項目</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input c-form__input--radio">
+											<label class="c-form__radio">
+												<input type="radio" name="お問い合わせ項目" value="サービスについて" checked="checked">
+												<i class="c-form__radio__icon"></i>
+												<span class="c-form__radio__text">サービスについて</span>
+											</label>
+											<label class="c-form__radio">
+												<input type="radio" name="お問い合わせ項目" value="弊社について">
+												<i class="c-form__radio__icon"></i>
+												<span class="c-form__radio__text">弊社について</span>
+											</label>
+											<label class="c-form__radio">
+												<input type="radio" name="お問い合わせ項目" value="その他">
+												<i class="c-form__radio__icon"></i>
+												<span class="c-form__radio__text">その他</span>
+											</label>
+										</div>
+									</dd>
+								</dl>
+
+								<dl class="c-form__item">
+									<dt class="c-form__title">お問い合わせ内容</dt>
+									<dd class="c-form__contents">
+										<div class="c-form__input"><textarea name="お問い合わせ内容" cols="30" rows="10"></textarea></div>
+									</dd>
+								</dl>
+							</div>
+							<!--c-form__formarea-->
+	
+							<div class="c-form__policy">
+								<dl class="c-form__policy__item">
+									<dt class="c-form__policy__title">プライバシーポリシー</dt>
+									<dd class="c-form__policy__contents">
+										<p>
+											１．本プライバシーポリシーの適用範囲について<br>
+											（１）適用範囲<br>
+											本プライバシーポリシーは、株式会社フロンティア（以下「当社」といいます）が管理・運営するウェブサイト「www.frontier-ad.co.jp」（以下「当サイト」といいます）を通じて提供していただく、氏名、住所、生年月日、性別、電話番号、e-mailアドレスなどお客様を特定、類推または、当サイトのお客様と認識してコンタクトをすることができる情報（以下「個人情報」といいます）に適用します。<br>
+			
+											（２）特記事項の優先<br>
+											当サイト内の個別ページ（以下「個別ページ」といいます）において個人情報のご提供いただくために、本プライバシーポリシーと異なる定めを明記しているとき、または、当サイトからリンクするFacebook、Twitter、lineおよび求人専用サイトなど外部の運営者が管理・運営するサイトにおいて、別にプライバシーポリシーが定められているときは、当該異なる定めを優先するものとします。<br><br>
+			
+											２．個人情報の取り扱いについて<br>
+											（１）個人情報の収集<br>
+											①当サイトは、原則的に個人情報を提供していただくことなく閲覧することができます。ただし、ユーザー登録、メールニュース配信、当社へのお問合せに対して回答をさせていただく場合などに、個人情報のご提供を受けるものとします。<br>
+											②当サイトでは、お客様が当サイト内のどの個別ページを閲覧したか、個別ページを閲覧するために要した時間などの情報を収集することがあります。収集した情報は、当サイトを閲覧するお客様の閲覧状況を分析することを目的とした情報として取り扱い、当サイトの改良や当社のマーケティング活動にのみ利用させていただくことがございます。<br><br>
+			
+											（２）個人情報利用目的<br>
+											当社は、当サイトを通じて収集した個人情報を、以下の利用目的に限り利用します。<br>
+											①当社の会社情報、事業情報などに対するご意見、お問合せ、口コミなどの確認・回答。<br>
+											②当社の求人情報に対するお問合せ、エントリー受付、回答、採用活動。<br>
+											③メールマガジン、ダイレクトメール、各種お知らせなどの情報提供。<br>
+											④当サイトの品質向上を目的とした調査・分析、マーケティング。<br>
+											⑤空メール配信者に対するURL情報の提供。<br><br>
+			
+											（３）免責事項<br>
+											以下の場合は、個人情報の収集および取り扱いに関して、当社は責任を負わないものとします。<br>
+											①当サイト内に設置した個人情報収集フォームなどに、お客様ご自身が必要な入力項目以外の情報を入力するなどして、期せずして収集した情報。<br>
+											②本サイトにリンクする外部リンクサイトに入力した情報。<br>
+											③正確な情報を入力していない個人情報および更新していない個人情報。<br>
+											④お客様が、ご本人以外の個人情報を入力したことによって収集した情報。<br><br>
+			
+											（４）第三者への個人情報の提供<br>
+											当社は、お客さまより提供された個人情報を以下の場合を除き、第三者に開示または提供いたしません。<br>
+											①お客様にあらかじめ同意をいただいている場合。<br>
+											②当社の関係会社、当社の協力会社などに対して業務委託をするために必要な場合。<br>
+											③お客様からの問い合わせ内容を検討し、当社関係会社が対応することが適正であると当社が判断した場合。<br>
+											④合併、会社分割、営業譲渡その他事業承継に伴って、事業を継承した会社などに個人情報を提供する場合。<br>
+											⑤司法機関、警察その他公共団体などから、法令に基づいて開示の要請があった場合。<br><br>
+			
+											３．個人情報の開示、訂正、利用停止などについて<br>
+											当サイトに入力された個人情報について、ご本人から、個人情報の開示をするように請求を受けたときは、ご本人からの請求であることを確認して、開示します。<br>
+											ただし、開示することにより以下のいずれかに該当する場合は、その全部または一部を開示しないこともあり、開示しない決定をした場合には、その旨を遅滞なく通知します。<br>
+											①ご本人または第三者の生命、身体、財産その他の権利利益を害するおそれがある場合。<br>
+											②当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合。<br>
+											③他の法令に違反することとなる場合。<br>
+											ただし、アクセスログなど個人情報以外の情報は、開示しません。<br><br>
+			
+											４．個人情報の安全対策<br>
+											お客様の個人情報を安全に管理・運営するために。個人情報への外部からの不正な アクセス、個人情報の紛失、毀損、改ざん、漏洩、社外への不正な流出などの危険 防止を目的として、合理的かつ適切な安全対策を実施しています。<br><br>
+			
+											５．クッキー（Cookie）について<br>
+											クッキーとは、ウェブサイトの運営者が、ウエブブラウザを通じて、閲覧中のお客 様のパソコンなどの端末にデータを書き込んで保存させる仕組みのことです。<br>
+											クッキーは、閲覧したお客様の情報や訪問したページに関する情報を認識して保存することができます。<br>
+											当サイトでは、以下の理由によりクッキーを利用することがあります。<br>
+											①セッションの管理を行うため。<br>
+											②お客様の個々の嗜好に合わせたカスタマイズをするため。<br>
+											③サイト上でお客様のニーズに合った広告などの情報をご提供するため。<br>
+											なお、クッキーはブラウザによって、受け取りの拒否、事前に受け取りの可否の確認を求める表示機能などの設定をすることができます。 設定方法などの詳細につきましては、ご利用のブラウザの提供元にお問合せください。<br><br>
+			
+											６．個人情報提供の任意性<br>
+											当サイトの利用にあたり、当社に対して個人情報を提供することは、お客様の任意 です。ただし、個人情報をご提供いただけない場合は、適切なサービスを受けるこ とができない場合があります。<br><br>
+			
+											７．プライバシーポリシーの変更<br>
+											本プライバシーポリシーの内容は、関連する法令の変更、社内の規程や規範の変更など必要に応じて見直すことがあります。最新版のプライバシーポリシーを常に当サイトに掲載いたします。<br><br>
+			
+											８．お問合せ受付先<br>
+											当社の個人情報の取り扱いについてのお問い合わせは、下記の部門が対応させていただきます。<br><br><br>
+			
+											制定：2012年10月1日<br>
+											改正：2017年10月1日<br>
+			
+											株式会社フロンティア　管理本部<br>
+											information@frontier-ad.co.jp<br>
+										</p>
+									</dd>
+								</dl>
+	
+								<div class="c-form__agree">
+									<label class="c-form__checkbox">
+										<input type="checkbox" data-agree>
+										<i class="c-form__checkbox__icon"></i>
+										<span class="c-form__checkbox__text">プライバシーポリシーに同意して送信</span>
+									</label>
+								</div>
+								<!--c-form__agree-->
+							</div>
+							<!--c-form__policy-->
+	
+							<div class="c-form__btn">
+								<button class="c-form__btn__item c-link-btn" type="submit">送信</button>
+							</div>
+							<!--c-form__btn-->
+						</form>
+					</div>
+					<!--p-contact__formarea-->
+				</div>
+				<!--p-contact__contents-->
+			</div>
+			<!--l-container-->
+		</section>
+		<!--p-contact-->
+	</main>
+
+	<aside class="l-aside">
+		<a class="l-aside__contact" data-scroll="contact">
+			<picture>
+				<source srcset="./assets/images/icon__fixed__contact__sp.svg" media="(max-width: 767px)">
+				<img src="./assets/images/icon__contact__btn.png" srcset="./assets/images/icon__contact__btn@2x.png 2x" alt="お問い合わせはこちら">
+			</picture>
+		</a>
+	</aside>
+
+	<footer class="l-footer">
+		<div class="l-container">
+			<div class="l-footer__service-lp">
+				<p class="l-footer__service-lp__txt01">デジタル広告サービスのお知らせ</p>
+				<p class="l-footer__service-lp__txt02">フロンティアでは他にも、デジタル広告手法として<br class="sp">以下のサービスを提供しております。<br>くわしくはバナーをクリック</p>
+				<ul class="l-footer__service-lp__list">
+					<li class="l-footer__service-lp__list__item"><a href="/lp/sumaho-orikomi"><img src="https://www.frontier-ad.co.jp/images/lp_banner_02.jpg" alt=""></a></li>
+					<li class="l-footer__service-lp__list__item"><a href="/lp/sumaho-kanban"><img src="https://www.frontier-ad.co.jp/images/lp_banner_05.jpg" alt=""></a></li>
+				</ul>
+				<p class="l-footer__service-lp__company">運営会社：<a href="/" target="_blank">株式会社フロンティア</a></p>
+			</div>
+
+			<p class="l-footer__copy"><small>Copyright© 2006-2022 FRONTIER INC.</small></p>
+		</div>
+		<!--l-container-->
+	</footer>
+</div>
+<!--wrapper-->
+
+<!-- js -->
+<script src="./assets/js/bundle.js" async></script>
+</body>
+</html>

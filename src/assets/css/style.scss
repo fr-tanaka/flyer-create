@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+// foundation
+@use "./scss/foundation/reset";
+@use "./scss/foundation/base";
+
+
+// layout
+@use "./scss/layout/*";
+
+// object
+@use "./scss/object/**/*";
