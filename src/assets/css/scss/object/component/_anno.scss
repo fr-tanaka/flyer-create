@@ -27,6 +27,16 @@
   }
 
   &__wrap {
-    text-align: center;
+    margin: 0 auto;
+
+    @include mq('sm'){
+      padding: 0 calc(30vw / $vwSm);
+    }
+    @include mq('lg'){
+      width: calc(588vw / $vwLg);
+    }
+    @include mq( 'xlg'){
+      width: 588px;
+    }
   }
 }

@@ -1252,7 +1252,7 @@
       }
     }
 
-    .c-anno {
+    .c-anno__wrap {
 
       @include mq('sm'){
         margin-top: calc(68vw / $vwSm);
