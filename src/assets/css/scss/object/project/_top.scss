@@ -1044,6 +1044,33 @@
           margin-left: -1.5em;
           content: "A.";
         }
+
+        &__anno {
+          position: relative;
+          display: block;
+          padding-left: 1em;
+
+          @include mq('sm'){
+            margin-top: calc(20vw / $vwSm);
+            font-size: calc(23vw / $vwSm);
+          }
+          @include mq('lg'){
+            margin-top: calc(16vw / $vwLg);
+            font-size: calc(23vw / $vwLg);
+          }
+          @include mq( 'xlg'){
+            margin-top: 16px;
+            font-size: 23px;
+          }
+
+          &:before {
+            position: relative;
+            display: block;
+            float: left;
+            margin-left: -1em;
+            content: "※";
+          }
+        }
       }
     }
   } // .p-faq
@@ -1312,13 +1339,13 @@
 
       img {
         @include mq('sm'){
-          width: calc(453vw / $vwSm);
+          width: calc(407vw / $vwSm);
         }
         @include mq('lg'){
-          width: calc(819vw / $vwLg);
+          width: calc(764vw / $vwLg);
         }
         @include mq( 'xlg'){
-          width: 819px;
+          width: 764px;
         }
       }
     }
