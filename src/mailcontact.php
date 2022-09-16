@@ -38,12 +38,12 @@ $site_top = "https://www.frontier-ad.co.jp/lp/flyer-create/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 // $to = "frontier-web@frontier-ad.co.jp";
-$to = "m.murotani@frontier-ad.co.jp";
+$to = "eigyohonbu@frontier-ad.co.jp";
 
 //自動返信メールの送信元メールアドレス
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
 // $from = "frontier-web@frontier-ad.co.jp";
-$from = "m.murotani@frontier-ad.co.jp";
+$from = "eigyohonbu@frontier-ad.co.jp";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "メールアドレス";
@@ -76,7 +76,7 @@ $useToken = 1;
 $userMail = 1;
 
 // Bccで送るメールアドレス(複数指定する場合は「,」で区切ってください 例 $BccMail = "aa@aa.aa,bb@bb.bb";)
-// $BccMail = "nagaoka@frontier-ad.co.jp,h.tanaka@frontier-ad.co.jp,n.yoshida@frontier-ad.co.jp,m.murotani@frontier-ad.co.jp,k.kurumizawa@frontier-ad.co.jp,m.tomita@frontier-ad.co.jp";
+$BccMail = "frontier-web@frontier-ad.co.jp";
 
 // 管理者宛に送信されるメールのタイトル（件名）
 $subject = "販促チラシ制作サービス｜株式会社フロンティア";
